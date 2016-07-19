@@ -1,0 +1,21 @@
+{
+  "name": "test-webpack-commons-chunk",
+  "description": "My webpack Commons Chunk playground",
+  "scripts": {
+    "build": "webpack",
+    "deploy": "gh-pages-deploy",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "file-loader": "^0.9.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "prep": [
+      "build"
+    ],
+    "noprompt": false
+  }
+}
